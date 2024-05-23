@@ -10,41 +10,42 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f8f8f8; /* Neutral background color */
+            color: #333; /* Font color */
         }
         header {
-            background: #1e1e1e;
+            background: #5e60ce; /* Solid background color */
             color: #fff;
             padding: 2rem 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            transition: background 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .container {
             width: 80%;
             margin: 2rem auto;
             overflow: hidden;
-            background: #fff;
+            background: #fff; /* White background */
             padding: 2rem;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
         }
         .section-title {
             margin: 2rem 0 1rem 0;
-            color: #333;
-            font-size: 1.8rem;
-            border-bottom: 3px solid #333;
-            display: inline-block;
-            padding-bottom: 0.5rem;
+            color: #5e60ce; /* Section title color */
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .illustrations {
             display: flex;
@@ -53,7 +54,7 @@
         }
         .illustration {
             width: calc(33.333% - 1rem);
-            background: #f0f0f0;
+            background: #fff; /* White background */
             padding: 1rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -71,38 +72,37 @@
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background: #1e1e1e;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 2rem 0;
+            background: #f8f8f8; /* Neutral background color */
+            color: #333;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
         }
         .btn {
             display: inline-block;
             padding: 0.75rem 1.25rem;
             margin: 1rem 0;
             border-radius: 5px;
-            background: #ff4081;
-            color: #fff;
+            background: #333; /* Dark gray button */
+            color: #fff; /* White text color */
             text-decoration: none;
             text-align: center;
             transition: background 0.3s ease;
         }
         .btn:hover {
-            background: #e0336f;
+            background: #555; /* Darker gray button on hover */
         }
         @media (max-width: 768px) {
             .container {
                 width: 90%;
             }
-            .illustration {
-                width: calc(50% - 1rem);
+            header h1 {
+                font-size: 2.5rem;
             }
-        }
-        @media (max-width: 480px) {
-            .illustration {
-                width: 100%;
+            .section-title {
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -117,11 +117,11 @@
             <h2 class="section-title">My Illustrations</h2>
             <div class="illustrations">
                 <div class="illustration">
-                    <img src="https://github.com/ramgarhia0/Gurdev-sPortfolio/blob/main/bir.jpg?raw=true" alt="Vector Art 1">
+                    <img src="file:///D:/my%20design/bir.jpg" alt="Vector Art 1">
                     <h3>Vector Art 1</h3>
                 </div>
                 <div class="illustration">
-                    <img src="https://github.com/ramgarhia0/Gurdev-sPortfolio/blob/main/wazir.jpg?raw=true" alt="Vector Art 2">
+                    <img src="file:///D:/my%20design/wazir.jpg" alt="Vector Art 2">
                     <h3>Vector Art 2</h3>
                 </div>
                 <div class="illustration">
@@ -130,9 +130,10 @@
                 </div>
                 <!-- Add more illustrations as needed -->
             </div>
-            <a href="index.html" class="btn">Back to Portfolio</a>
+            <a href="index.html" class="btn" style="background-color: #5e60ce;">Back to Portfolio</a>
         </section>
     </div>
+
     <footer>
         <p>&copy; 2024 Gurdev Singh. All rights reserved.</p>
     </footer>
