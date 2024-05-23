@@ -4,141 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurdev Singh - Graphics Designer Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333; /* Font color */
-        }
-        header {
-            background: #ff4081; /* Header background color */
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: background 0.3s;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            animation: fadeInDown 1s ease-in-out;
-        }
-        header p {
-            margin: 0;
-            font-size: 1.2rem;
-            animation: fadeInDown 1s ease-in-out 0.5s;
-        }
-        .container {
-            width: 80%;
-            margin: 2rem auto;
-            overflow: hidden;
-            background: #fff;
-            padding: 2rem;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            animation: fadeInUp 1s ease-in-out;
-        }
-        .section-title {
-            margin: 2rem 0 1rem 0;
-            color: #ff4081; /* Section title color */
-            font-size: 1.8rem;
-            border-bottom: 3px solid #ff4081; /* Section title border color */
-            display: inline-block;
-            padding-bottom: 0.5rem;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #ff4081; /* List item background color */
-            color: #fff;
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            border-radius: 5px;
-            animation: fadeInUp 1s ease-in-out;
-        }
-        .project {
-            margin-bottom: 1rem;
-        }
-        .project h3 {
-            margin: 0.5rem 0;
-            color: #ff4081; /* Project title color */
-        }
-        .project p {
-            margin: 0;
-        }
-        .contact-info {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #ff4081; /* Contact info background color */
-            color: #fff;
-            text-align: center;
-            border-radius: 10px;
-        }
-        .contact-info a {
-            color: #ff4081;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .contact-info a:hover {
-            color: #fff; /* Change color on hover */
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #ff4081; /* Footer background color */
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: 2rem; /* Add margin to separate from content */
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.25rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-            background: #ff4081;
-            color: #fff;
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease;
-            cursor: pointer; /* Add pointer cursor on hover */
-        }
-        .btn:hover {
-            background: #e0336f;
-        }
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -148,7 +14,7 @@
     <div class="container">
         <section id="about">
             <h2 class="section-title">About Me</h2>
-            <p>Hello! I'm Gurdev Singh, a graphics designer specializing in creating vector illustrations of people and celebrities. I have a passion for transforming photographs into detailed vector art, capturing the essence and personality of my subjects.</p>
+            <p>Hello! I'm Gurdev Singh, a passionate graphics designer specializing in creating stunning vector illustrations. With a keen eye for detail and a love for creativity, I bring concepts to life through vibrant and expressive artwork.</p>
         </section>
         <section id="skills">
             <h2 class="section-title">Skills</h2>
@@ -164,25 +30,23 @@
             <h2 class="section-title">Projects</h2>
             <div class="project">
                 <h3>Celebrity Vector Portraits</h3>
-                <p>A collection of vector portraits of various celebrities. Each piece aims to capture the unique characteristics and expressions of the individuals.</p>
+                <p>A captivating collection of vector portraits showcasing the beauty and diversity of celebrities from various industries.</p>
             </div>
             <div class="project">
                 <h3>Custom Vector Illustrations</h3>
-                <p>Commissioned vector illustrations for clients, including portraits and other custom artwork tailored to their preferences.</p>
+                <p>Commissioned artworks tailored to clients' preferences, ranging from personalized portraits to intricate designs.</p>
             </div>
-           <!-- Add more projects as needed -->  
-               <a href="vector-art.html" class="btn">View Vector Art</a>
-        </section>
-        <section id="contact">
-            <h2 class="section-title">Contact Information</h2>
-            <p>If you'd like to get in touch, please reach out via email or follow me on social media.</p>
-            <p>Email: <a href=" mailto:gurdevjandu2009@gmail.com">gurdevjandu2009@gmail.com</a></p>
-            <p>LinkedIn: <a href=""https://www.linkedin.com/in/gurdev-singh-629412309?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BawVkkWXORgW0K0%2FUNyrnxQ%3D%3D">linkedin.com/in/gurdev singh</a></p>
-            <p>Twitter: <a href="https://twitter.com/gurdevsingh" target="_blank">@gurdevsingh</a></p>
+            <a href="vector-art.html" class="btn">View Vector Art</a>
+            <a href="contact.html" class="btn">Contact Me</a> <!-- New button for Contact -->
         </section>
     </div>
     <footer>
         <p>&copy; 2024 Gurdev Singh. All rights reserved.</p>
-    </footer>
+    </footer><div class="loading-container">
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+    <!-- Rest of your HTML content -->
+    <script src="script.js"></script>
 </body>
-</html>       
+</html>
