@@ -1,0 +1,180 @@
+/* Rest of your styles */
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Neutral background color */
+    color: #333; /* Font color */
+}
+
+header {
+    /* Header styles */
+}
+
+.container {
+    /* Container styles */
+}
+
+.section-title {
+    /* Section title styles */
+}
+
+/* Other styles */
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Neutral background color */
+    color: #333; /* Font color */
+}
+
+header {
+    background: #5e60ce; /* Solid background color */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    animation: fadeInDown 1s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    animation: fadeInUp 1s ease;
+}
+
+.section-title {
+    margin: 2rem 0 1rem 0;
+    color: #5e60ce; /* Section title color */
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project {
+    margin-bottom: 2rem;
+    animation: fadeInLeft 1s ease;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e60ce; /* Button color */
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #4246ab; /* Lighter shade on hover */
+    animation: pulse 0.5s infinite alternate; /* Add pulse animation on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f8f8f8; /* Neutral background color */
+    color: #333;
+    animation: fadeInUp 1s ease;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(1.1);
+    }
+}
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    border: 8px solid rgba(94, 96, 206, 0.2);
+    border-top: 8px solid #5e60ce;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    z% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
