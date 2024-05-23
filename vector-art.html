@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurdev Singh - Vector Art</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            margin: 2rem 0 1rem 0;
+            color: #333;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #333;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .illustrations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .illustration {
+            width: calc(33.333% - 1rem);
+            background: #f0f0f0;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .illustration img {
+            width: 300px; /* Set width */
+            height: 300px; /* Set height */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+        .illustration h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #1e1e1e;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.25rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            background: #ff4081;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #e0336f;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .illustration {
+                width: calc(50% - 1rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .illustration {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gurdev Singh</h1>
+        <p>Vector Art</p>
+    </header>
+    <div class="container">
+        <section id="illustrations">
+            <h2 class="section-title">My Illustrations</h2>
+            <div class="illustrations">
+                <div class="illustration">
+                    <img src="file:///D:/my%20design/bir.jpg" alt="Vector Art 1">
+                    <h3>Vector Art 1</h3>
+                </div>
+                <div class="illustration">
+                    <img src="file:///D:/my%20design/wazir.jpg" alt="Vector Art 2">
+                    <h3>Vector Art 2</h3>
+                </div>
+                <div class="illustration">
+                    <img src="https://www.creativehatti.com/wp-content/uploads/2021/06/Diljit-Dosanj-Vector-Illustration-Thumbnail-Small.jpg" alt="Vector Art 3">
+                    <h3>Vector Art 3</h3>
+                </div>
+                <!-- Add more illustrations as needed -->
+            </div>
+            <a href="index.html" class="btn">Back to Portfolio</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Gurdev Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
