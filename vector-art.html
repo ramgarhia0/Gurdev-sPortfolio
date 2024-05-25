@@ -33,7 +33,6 @@
         .container {
             width: 80%;
             margin: 2rem auto;
-            overflow: hidden;
             background: #fff; /* White background */
             padding: 2rem;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -50,25 +49,37 @@
         .illustrations {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 1.5rem;
+            justify-content: center; /* Center the illustrations */
         }
         .illustration {
-            width: calc(33.333% - 1rem);
+            flex: 1 1 calc(33.333% - 1rem);
             background: #fff; /* White background */
             padding: 1rem;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s ease; /* Add transition for hover effect */
         }
         .illustration img {
-            width: 300px; /* Set width */
-            height: 300px; /* Set height */
+            width: auto; /* Maintain aspect ratio */
+            height: 600px; /* Set height to 600px */
+            max-width: 315px; /* Set max width to 315px */
             object-fit: cover; /* Maintain aspect ratio */
             border-radius: 5px;
             margin-bottom: 0.5rem;
         }
         .illustration h3 {
-            margin: 0;
+            margin: 0.5rem 0;
             font-size: 1.2rem;
+            color: #5e60ce; /* Illustration title color */
+        }
+        .illustration p {
+            font-size: 1rem;
+            color: #666; /* Description color */
+        }
+        .illustration:hover {
+            transform: scale(1.05); /* Scale up on hover */
         }
         footer {
             text-align: center;
@@ -104,6 +115,14 @@
             .section-title {
                 font-size: 1.8rem;
             }
+            .illustration {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .illustration {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
@@ -117,20 +136,24 @@
             <h2 class="section-title">My Illustrations</h2>
             <div class="illustrations">
                 <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/bir.jpg" alt="Vector Art 1">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Diljit%20DosanjVector%20Illustration-01.png" alt="Vector Art 1">
                     <h3>Vector Art 1</h3>
+                    <p>A vibrant depiction of abstract shapes and colors.</p>
                 </div>
                 <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/wazir.jpg" alt="Vector Art 2">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Garry%20Sandhu3-01.png">
                     <h3>Vector Art 2</h3>
+                    <p>An intricate design with detailed line work and shading.</p>
                 </div>
                 <div class="illustration">
-                    <img src="https://github.com/ramgarhia0/Gurdev-sPortfolio/blob/main/Diljit%20DosanjVector%20Illustration-01.png?raw=true" alt="Vector Art 3">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/bir.jpg" alt="Vector Art 1" alt="Vector Art 3">
                     <h3>Vector Art 3</h3>
+                    <p>A modern take on traditional portrait art.</p>
                 </div>
                 <div class="illustration">
-                    <img src="https://github.com/ramgarhia0/Gurdev-sPortfolio/blob/main/Garry%20Sandhu3-01.png?raw=truehttps://github.com/ramgarhia0/Gurdev-sPortfolio/blob/main/Garry%20Sandhu3-01.png?raw=true" alt="Vector Art 4">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/wazir.jpg" alt="Vector Art 4">
                     <h3>Vector Art 4</h3>
+                    <p>A creative fusion of contemporary styles and classic elements.</p>
                 </div>
                 <!-- Add more illustrations as needed -->
             </div>
@@ -143,3 +166,4 @@
     </footer>
 </body>
 </html>
+ 
