@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurdev Singh - Vector Art</title>
+    <title>Gurdev Singh - Graphics Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 0.8;
             margin: 0;
             padding: 0;
             background-color: #f8f8f8; /* Neutral background color */
@@ -30,6 +32,21 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #555;
+        }
         .container {
             width: 80%;
             margin: 2rem auto;
@@ -46,13 +63,13 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        .illustrations {
+        .products {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
-            justify-content: center; /* Center the illustrations */
+            justify-content: center; /* Center the products */
         }
-        .illustration {
+        .product {
             flex: 1 1 calc(33.333% - 1rem);
             background: #fff; /* White background */
             padding: 1rem;
@@ -61,7 +78,7 @@
             border-radius: 10px; /* Rounded corners */
             transition: transform 0.3s ease; /* Add transition for hover effect */
         }
-        .illustration img {
+        .product img {
             width: auto; /* Maintain aspect ratio */
             height: 600px; /* Set height to 600px */
             max-width: 315px; /* Set max width to 315px */
@@ -70,16 +87,28 @@
             margin-bottom: 0.5rem;
             border: 3px solid #5e60ce; /* Add border to images */
         }
-        .illustration h3 {
+        .product h3 {
             margin: 0.5rem 0;
             font-size: 1.2rem;
-            color: #5e60ce; /* Illustration title color */
+            color: #5e60ce; /* Product title color */
         }
-        .illustration p {
+        .product p {
             font-size: 1rem;
             color: #666; /* Description color */
         }
-        .illustration:hover {
+        .product button {
+            background: #5e60ce;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .product button:hover {
+            background: #4e50ce;
+        }
+        .product:hover {
             transform: scale(1.05); /* Scale up on hover */
         }
         footer {
@@ -92,20 +121,6 @@
             margin: 0;
             font-size: 1rem;
         }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.25rem;
-            margin: 1rem 0;
-            border-radius: 5px;
-            background: #333; /* Dark gray button */
-            color: #fff; /* White text color */
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #555; /* Darker gray button on hover */
-        }
         @media (max-width: 768px) {
             .container {
                 width: 90%;
@@ -116,12 +131,12 @@
             .section-title {
                 font-size: 1.8rem;
             }
-            .illustration {
+            .product {
                 flex: 1 1 calc(50% - 1rem);
             }
         }
         @media (max-width: 480px) {
-            .illustration {
+            .product {
                 flex: 1 1 100%;
             }
         }
@@ -129,39 +144,54 @@
 </head>
 <body>
     <header>
-        <h1>Gurdev Singh</h1>
-        <p>Vector Art</p>
+        <h2>Gurdev Singh</h2><br>
+        <p>Vector Art Store</p>
     </header>
-    <div class="container">
-        <section id="illustrations">
-            <h2 class="section-title">My Illustrations</h2>
-            <div class="illustrations">
-                <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Diljit%20DosanjVector%20Illustration-01.png" alt="Vector Art 1">
-                    <h3>Vector Art 1</h3>
-                    <p>A vibrant depiction of abstract shapes and colors.</p>
-                </div>
-                <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Garry%20Sandhu3-01.png" alt="Vector Art 2">
-                    <h3>Vector Art 2</h3>
-                    <p>An intricate design with detailed line work and shading.</p>
-                </div>
-                <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/wazir.jpg" alt="Vector Art 3">
-                    <h3>Vector Art 3</h3>
-                    <p>A modern take on traditional portrait art.</p>
-                </div>
-                <div class="illustration">
-                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/bir.jpg" alt="Vector Art 4">
-                    <h3>Vector Art 4</h3>
-                    <p>A creative fusion of contemporary styles and classic elements.</p>
-                </div>
-                <!-- Add more illustrations as needed -->
-            </div>
-            <a href="index.html" class="btn" style="background-color: #5e60ce;">Back to Portfolio</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="#cart">Cart</a>
+        <a href="contact1.html">Contact</a>
+    </nav>
+    <div id="home" class="container">
+        <section>
+            <h2 class="section-title">Welcome to Gurdev Singh's Vector Art Store</h2>
+            <p>Discover unique and vibrant vector art illustrations. Explore our collection and find the perfect piece for your space.</p>
         </section>
     </div>
-
+    <div id="products" class="container">
+        <section>
+            <h2 class="section-title">Our Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Diljit%20DosanjVector%20Illustration-01.png" alt="Vector Art 1">
+                    <h3>Vector Art 1</h3>
+                    <p>A vibrant depiction of abstract shapes and colors.</p><br>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/Garry%20Sandhu3-01.png" alt="Vector Art 2">
+                    <h3>Vector Art 2</h3>
+                    <p>An intricate design with detailed line work and shading.</p><br>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/wazir.jpg" alt="Vector Art 3">
+                    <h3>Vector Art 3</h3>
+                    <p>A modern take on traditional portrait art.</p><br>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://raw.githubusercontent.com/ramgarhia0/Gurdev-sPortfolio/main/bir.jpg" alt="Vector Art 4">
+                    <h3>Vector Art 4</h3>
+                    <p>A creative fusion of contemporary styles and classic elements.</p><br>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+     
+         </section><br><a href="index.html" class="btn" style="background-color: #5e60ce;">Back to portfolio</a>
+    </div>
     <footer>
         <p>&copy; 2024 Gurdev Singh. All rights reserved.</p>
     </footer>
